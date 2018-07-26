@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/layout_header"/>-->
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <LinearLayout
+
+         android:padding="10dp"
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_gravity="left"
+             android:id="@+id/capturePicture"
+             android:layout_width="wrap_content"
+             android:src="@drawable/camera_50"
+             android:layout_height="wrap_content" />
+
+         <ImageView
+             android:layout_gravity="right"
+             android:id="@+id/samplePicture"
+             android:layout_width="wrap_content"
+             android:src="@drawable/camera_50"
+             android:layout_height="wrap_content" />
+
+         <!-- To display picture taken -->
+
+         <ImageView
+             android:id="@+id/imgPreview"
+             android:layout_margin="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="visible"
+             android:scaleType="fitXY"
+             android:adjustViewBounds="true"
+             android:layout_marginTop="15dp"/>
+
+                <EditText
+
+             android:padding="10dp"
+             android:id="@+id/inputKeterangan"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <!--<LinearLayout-->
+
+             <!--android:padding="10dp"-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:orientation="horizontal"-->
+             <!--android:layout_height="wrap_content">-->
+
+             <!--<ImageView-->
+                 <!--android:layout_width="25dp"-->
+                 <!--android:src="@drawable/location_logo_64"-->
+                 <!--android:layout_height="25dp" />-->
+
+             <!--<TextView-->
+                 <!--android:id="@+id/lokasiUser"-->
+                 <!--android:layout_marginLeft="5dp"-->
+                 <!--android:textStyle="bold|italic"-->
+                 <!--android:textColor="#0000"-->
+                 <!--android:layout_width="match_parent"-->
+                 <!--tools:text="Pakulonan, Tangerang, Banten"-->
+                 <!--android:layout_height="wrap_content" />-->
+
+         <!--</LinearLayout>-->
+
+         <Button
+             android:layout_marginTop="5dp"
+             android:id="@+id/btnUpload"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:background="@color/colorAccent"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             android:text="AMBIL TEXT"
+             android:textColor="#fff"
+             android:layout_marginBottom="20dp"/>
+
+
+     </LinearLayout>
+
+ </ScrollView>
+
+
+</LinearLayout>
